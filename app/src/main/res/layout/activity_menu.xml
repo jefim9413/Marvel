@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="0dp"
+    tools:context=".MenuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/icon_x_menu_screen"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/x" />
+
+            <View
+                android:id="@+id/view7"
+                android:layout_width="match_parent"
+                android:layout_height="24dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#4D4200FF"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <View
+                        android:id="@+id/icon_house_line_menu_screen"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/house_line" />
+
+                    <TextView
+                        android:id="@+id/text_home_menu_screen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TextView"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        tools:text="@string/home" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#4DFF0000"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <View
+                        android:id="@+id/icon_person_menu_screen"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/person" />
+
+                    <TextView
+                        android:id="@+id/text_caracters_menu_screen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TextView"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        tools:text="@string/caracters" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#4DFF9900"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <View
+                        android:id="@+id/icon_article_ny_times_menu_screen"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/article_ny_times" />
+
+                    <TextView
+                        android:id="@+id/text_comics_menu_screen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TextView"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        tools:text="@string/comics" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#4DFAFF00"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <View
+                        android:id="@+id/icon_user_circle_plus_menu_screen"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/user_circle_plus" />
+
+                    <TextView
+                        android:id="@+id/text_creators_menu_screen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TextView"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        tools:text="@string/creators" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#4D61FF00"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <View
+                        android:id="@+id/icon_calendar_menu_screen"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/calendar" />
+
+                    <TextView
+                        android:id="@+id/text_events_menu_screen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TextView"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        tools:text="@string/events" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#4D00FFF0"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <View
+                        android:id="@+id/icon_article_medium_menu_screen"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/article_medium" />
+
+                    <TextView
+                        android:id="@+id/text_series_menu_screen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TextView"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        tools:text="@string/series" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#4D4200FF"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <View
+                        android:id="@+id/icon_scroll_menu_screen"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/scroll" />
+
+                    <TextView
+                        android:id="@+id/text_stories_menu_screen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TextView"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        tools:text="@string/stories" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

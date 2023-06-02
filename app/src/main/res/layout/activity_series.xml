@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="0dp"
+    tools:context=".SeriesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4D00FFF0"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <View
+                android:id="@+id/icon_list_series_screen"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/list" />
+
+            <TextView
+                android:id="@+id/text_home_series_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/series_minus"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/icon_map_pin_series_screen"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/map_pin" />
+
+                <View
+                    android:id="@+id/user_circle_series_screen"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/user_circle" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="312dp"
+                        android:layout_height="wrap_content"
+                        android:background="#CC000000"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingEnd="32dp"
+                        android:paddingBottom="8dp">
+
+                        <View
+                            android:id="@+id/icon_search_series_screen"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="0"
+                            android:background="@drawable/magnifying_glass" />
+
+                        <TextView
+                            android:id="@+id/text_search_series_screen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text="@string/search_placeholder"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/space1_series_screen"
+                        android:layout_width="8dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0" />
+
+                    <View
+                        android:id="@+id/icon_funnel_series_screen"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/funnel" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/space2_series_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/search_label_series_screen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text="@string/search_label"
+                            android:textColor="#FFFFFF" />
+
+                        <View
+                            android:id="@+id/space3_series_screen"
+                            android:layout_width="4dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0" />
+
+                        <TextView
+                            android:id="@+id/text_search_all_series_screen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="#4D4200FF"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="@string/search_all"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/space4_series_screen"
+                        android:layout_width="224dp"
+                        android:layout_height="match_parent" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/filter_label_series_screen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text="@string/filter_label"
+                            android:textColor="#FFFFFF" />
+
+                        <View
+                            android:id="@+id/space5_series_screen"
+                            android:layout_width="4dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0" />
+
+                        <TextView
+                            android:id="@+id/text_filter_all_series_screen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="#4D00FFF0"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="@string/search_all"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/space6_series_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/image1_series_screen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/image_content" />
+
+                    <View
+                        android:id="@+id/space7_series_screen"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp" />
+
+                    <TextView
+                        android:id="@+id/text_name1_series_screen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/name"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20dp" />
+
+                    <View
+                        android:id="@+id/space8_series_screen"
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp" />
+
+                    <TextView
+                        android:id="@+id/text_description1_series_screen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/description"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14dp" />
+
+                    <View
+                        android:id="@+id/space9_series_screen"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp" />
+
+                    <Button
+                        android:id="@+id/button_know_more1_series_screen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#4D00FFF0"
+                        android:text="@string/know_more"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/space10_series_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/image2_series_screen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/image_content" />
+
+                    <View
+                        android:id="@+id/space11_series_screen"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp" />
+
+                    <TextView
+                        android:id="@+id/text_name2_series_screen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/name"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20dp" />
+
+                    <View
+                        android:id="@+id/space12_series_screen"
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp" />
+
+                    <TextView
+                        android:id="@+id/text_description2_series_screen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/description"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14dp" />
+
+                    <View
+                        android:id="@+id/space13_series_screen"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp" />
+
+                    <Button
+                        android:id="@+id/button_know_more2_series_screen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#4D00FFF0"
+                        android:text="@string/know_more"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/space14_series_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/image3_series_screen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/image_content" />
+
+                    <View
+                        android:id="@+id/space15_series_screen"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp" />
+
+                    <TextView
+                        android:id="@+id/text_name3_series_screen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/name"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20dp" />
+
+                    <View
+                        android:id="@+id/space16_series_screen"
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp" />
+
+                    <TextView
+                        android:id="@+id/text_description3_series_screen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/description"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14dp" />
+
+                    <View
+                        android:id="@+id/space17_series_screen"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp" />
+
+                    <Button
+                        android:id="@+id/button_know_more3_series_screen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#4D00FFF0"
+                        android:text="@string/know_more"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="0dp"
+    android:textAlignment="center"
+    tools:context=".KnowMoreCaracterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:gravity="start"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#CC850000"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <View
+                android:id="@+id/icon_list_know_more_caracter"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/list" />
+
+            <TextView
+                android:id="@+id/text_home_know_more_caracter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/know_more_caracter"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/icon_map_pin_know_more_caracter"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/map_pin" />
+
+                <View
+                    android:id="@+id/user_circle_know_more_caracter"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/user_circle" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/image1_caracters_screen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/image_content" />
+
+                    <View
+                        android:id="@+id/space7_caracters_screen"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#CC000000"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/text_name1_caracters_screen"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/name"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20dp" />
+
+                        <View
+                            android:id="@+id/space8_caracters_screen"
+                            android:layout_width="match_parent"
+                            android:layout_height="4dp" />
+
+                        <TextView
+                            android:id="@+id/text_description1_caracters_screen"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/description_complete"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_comics_minus_know_more_caracter"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/comics_minus"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
+
+                        <View
+                            android:id="@+id/space6_know_more_caracter"
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp" />
+
+                        <HorizontalScrollView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="#4DFF9900">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="8dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#CC000000"
+                                    android:orientation="vertical">
+
+                                    <View
+                                        android:id="@+id/image6_know_more_caracter"
+                                        android:layout_width="80dp"
+                                        android:layout_height="90dp"
+                                        android:background="@drawable/rectangle_card" />
+
+                                    <TextView
+                                        android:id="@+id/text_titulo6_know_more_caracter"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/titulo"
+                                        android:textAlignment="center"
+                                        android:textColor="#FFFFFF" />
+                                </LinearLayout>
+
+                                <View
+                                    android:id="@+id/space7_know_more_caracter"
+                                    android:layout_width="4dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#CC000000"
+                                    android:orientation="vertical">
+
+                                    <View
+                                        android:id="@+id/image7_know_more_caracter"
+                                        android:layout_width="80dp"
+                                        android:layout_height="90dp"
+                                        android:background="@drawable/rectangle_card" />
+
+                                    <TextView
+                                        android:id="@+id/text_titulo7_know_more_caracter"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/titulo"
+                                        android:textAlignment="center"
+                                        android:textColor="#FFFFFF" />
+                                </LinearLayout>
+
+                                <View
+                                    android:id="@+id/space8_know_more_caracter"
+                                    android:layout_width="4dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#CC000000"
+                                    android:orientation="vertical">
+
+                                    <View
+                                        android:id="@+id/image8_know_more_caracter"
+                                        android:layout_width="80dp"
+                                        android:layout_height="90dp"
+                                        android:background="@drawable/rectangle_card" />
+
+                                    <TextView
+                                        android:id="@+id/text_titulo8_know_more_caracter"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/titulo"
+                                        android:textAlignment="center"
+                                        android:textColor="#FFFFFF" />
+                                </LinearLayout>
+
+                                <View
+                                    android:id="@+id/space9_know_more_caracter"
+                                    android:layout_width="4dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#CC000000"
+                                    android:orientation="vertical">
+
+                                    <View
+                                        android:id="@+id/image9_know_more_caracter"
+                                        android:layout_width="80dp"
+                                        android:layout_height="90dp"
+                                        android:background="@drawable/rectangle_card" />
+
+                                    <TextView
+                                        android:id="@+id/text_titulo9_know_more_caracter"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/titulo"
+                                        android:textAlignment="center"
+                                        android:textColor="#FFFFFF" />
+                                </LinearLayout>
+
+                                <View
+                                    android:id="@+id/space10_know_more_caracter"
+                                    android:layout_width="4dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#CC000000"
+                                    android:orientation="vertical">
+
+                                    <View
+                                        android:id="@+id/image10_know_more_caracter"
+                                        android:layout_width="80dp"
+                                        android:layout_height="90dp"
+                                        android:background="@drawable/rectangle_card" />
+
+                                    <TextView
+                                        android:id="@+id/text_titulo10_know_more_caracter"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/titulo"
+                                        android:textAlignment="center"
+                                        android:textColor="#FFFFFF" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/space11_know_more_caracter"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_events_minus_know_more_caracter"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/events_minus"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
+
+                        <View
+                            android:id="@+id/space17_know_more_caracter"
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp" />
+
+                        <HorizontalScrollView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="#4D61FF00">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="8dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#CC000000"
+                                    android:orientation="vertical">
+
+                                    <View
+                                        android:id="@+id/image16_know_more_caracter"
+                                        android:layout_width="80dp"
+                                        android:layout_height="90dp"
+                                        android:background="@drawable/rectangle_card" />
+
+                                    <TextView
+                                        android:id="@+id/text_titulo16_know_more_caracter"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/titulo"
+                                        android:textAlignment="center"
+                                        android:textColor="#FFFFFF" />
+                                </LinearLayout>
+
+                                <View
+                                    android:id="@+id/space18_know_more_caracter"
+                                    android:layout_width="4dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#CC000000"
+                                    android:orientation="vertical">
+
+                                    <View
+                                        android:id="@+id/image17_know_more_caracter"
+                                        android:layout_width="80dp"
+                                        android:layout_height="90dp"
+                                        android:background="@drawable/rectangle_card" />
+
+                                    <TextView
+                                        android:id="@+id/text_titulo17_know_more_caracter"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/titulo"
+                                        android:textAlignment="center"
+                                        android:textColor="#FFFFFF" />
+                                </LinearLayout>
+
+                                <View
+                                    android:id="@+id/space19_know_more_caracter"
+                                    android:layout_width="4dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#CC000000"
+                                    android:orientation="vertical">
+
+                                    <View
+                                        android:id="@+id/image18_know_more_caracter"
+                                        android:layout_width="80dp"
+                                        android:layout_height="90dp"
+                                        android:background="@drawable/rectangle_card" />
+
+                                    <TextView
+                                        android:id="@+id/text_titulo18_know_more_caracter"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/titulo"
+                                        android:textAlignment="center"
+                                        android:textColor="#FFFFFF" />
+                                </LinearLayout>
+
+                                <View
+                                    android:id="@+id/space20_know_more_caracter"
+                                    android:layout_width="4dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#CC000000"
+                                    android:orientation="vertical">
+
+                                    <View
+                                        android:id="@+id/image19_know_more_caracter"
+                                        android:layout_width="80dp"
+                                        android:layout_height="90dp"
+                                        android:background="@drawable/rectangle_card" />
+
+                                    <TextView
+                                        android:id="@+id/text_titulo19_know_more_caracter"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/titulo"
+                                        android:textAlignment="center"
+                                        android:textColor="#FFFFFF" />
+                                </LinearLayout>
+
+                                <View
+                                    android:id="@+id/space21_know_more_caracter"
+                                    android:layout_width="4dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#CC000000"
+                                    android:orientation="vertical">
+
+                                    <View
+                                        android:id="@+id/image20_know_more_caracter"
+                                        android:layout_width="80dp"
+                                        android:layout_height="90dp"
+                                        android:background="@drawable/rectangle_card" />
+
+                                    <TextView
+                                        android:id="@+id/text_titulo20_know_more_caracter"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/titulo"
+                                        android:textAlignment="center"
+                                        android:textColor="#FFFFFF" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view6"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_series_minus_know_more_caracter"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/series_minus"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp" />
+
+                        <View
+                            android:id="@+id/space22_know_more_caracter"
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp" />
+
+                        <HorizontalScrollView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="#4D00FFF0">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="8dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#CC000000"
+                                    android:orientation="vertical">
+
+                                    <View
+                                        android:id="@+id/image21_know_more_caracter"
+                                        android:layout_width="80dp"
+                                        android:layout_height="90dp"
+                                        android:background="@drawable/rectangle_card" />
+
+                                    <TextView
+                                        android:id="@+id/text_titulo21_know_more_caracter"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/titulo"
+                                        android:textAlignment="center"
+                                        android:textColor="#FFFFFF" />
+                                </LinearLayout>
+
+                                <View
+                                    android:id="@+id/space23_know_more_caracter"
+                                    android:layout_width="4dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#CC000000"
+                                    android:orientation="vertical">
+
+                                    <View
+                                        android:id="@+id/image22_know_more_caracter"
+                                        android:layout_width="80dp"
+                                        android:layout_height="90dp"
+                                        android:background="@drawable/rectangle_card" />
+
+                                    <TextView
+                                        android:id="@+id/text_titulo22_know_more_caracter"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/titulo"
+                                        android:textAlignment="center"
+                                        android:textColor="#FFFFFF" />
+                                </LinearLayout>
+
+                                <View
+                                    android:id="@+id/space24_know_more_caracter"
+                                    android:layout_width="4dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#CC000000"
+                                    android:orientation="vertical">
+
+                                    <View
+                                        android:id="@+id/image23_know_more_caracter"
+                                        android:layout_width="80dp"
+                                        android:layout_height="90dp"
+                                        android:background="@drawable/rectangle_card" />
+
+                                    <TextView
+                                        android:id="@+id/text_titulo23_know_more_caracter"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/titulo"
+                                        android:textAlignment="center"
+                                        android:textColor="#FFFFFF" />
+                                </LinearLayout>
+
+                                <View
+                                    android:id="@+id/space25_know_more_caracter"
+                                    android:layout_width="4dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#CC000000"
+                                    android:orientation="vertical">
+
+                                    <View
+                                        android:id="@+id/image24_know_more_caracter"
+                                        android:layout_width="80dp"
+                                        android:layout_height="90dp"
+                                        android:background="@drawable/rectangle_card" />
+
+                                    <TextView
+                                        android:id="@+id/text_titulo24_know_more_caracter"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/titulo"
+                                        android:textAlignment="center"
+                                        android:textColor="#FFFFFF" />
+                                </LinearLayout>
+
+                                <View
+                                    android:id="@+id/space26_know_more_caracter"
+                                    android:layout_width="4dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#CC000000"
+                                    android:orientation="vertical">
+
+                                    <View
+                                        android:id="@+id/image25_know_more_caracter"
+                                        android:layout_width="80dp"
+                                        android:layout_height="90dp"
+                                        android:background="@drawable/rectangle_card" />
+
+                                    <TextView
+                                        android:id="@+id/text_titulo25_know_more_caracter"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/titulo"
+                                        android:textAlignment="center"
+                                        android:textColor="#FFFFFF" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
